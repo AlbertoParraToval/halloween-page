@@ -1,0 +1,97 @@
+/*hoja de estilos para la presentación de halloween*/
+/*IMPORTANTE: NO es responsive*/
+@font-face {
+    font-family: halloween;
+    src: url("../fonts/October\ Crow.ttf");
+}
+body{
+    background-color: black;
+}
+
+#container{
+    font-family: halloween;
+    position:relative;
+    color:white;
+    margin:auto;
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../images/halloween-background.jpg);
+}
+#title{
+    font-size:3em;
+    position: absolute;
+    top:30px;
+    left:100px;
+    color: rgb(255, 0, 0);
+}
+#phantomp{
+    font-size: 1.4em;
+    position: absolute;
+    top: 320px;
+    left:500px;
+}
+#title, #phantomp, #witchp, #batp{
+    
+    text-shadow: 5px 5px 5px red;
+}
+
+#phantom_div{
+    position: absolute;
+    width:150px;
+    height:150px;
+    top: 420px;
+    left:590px;  
+}
+#phantom{
+    position: absolute;
+    width:200px;
+    height:200px;
+    top: 380px;
+    left:750px;
+    visibility: hidden;/*El fantasma de entrada no se ve.*/
+}
+
+#witchp{
+    position: absolute;
+    top:250px;
+    left:1150px;
+    font-size: 1.2em;
+}
+#witch{
+    position: absolute;
+    width:150px;
+    height:150px;
+    top:360px;
+    left:1175px;
+}
+#horribleWitch{
+    position: absolute;
+    width:100px;
+    height:100px;
+    top:360px;
+    left:1175px;
+    visibility: hidden;
+}
+
+#batp{
+    position: absolute;
+    top:650px;
+    left:40px;
+    font-size: 1.6em;
+}
+#left_tree{
+    position: absolute;
+    width:350px;
+    height:250px;
+    top:150px;
+    left:40px;
+}
+#bat{
+    position: absolute;
+    width:300px;
+    height:200px;
+    top:150px;
+    left:40px;
+    visibility: hidden;
+}
