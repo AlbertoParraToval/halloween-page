@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <!-- enlazo con el style -->
+    <link rel="stylesheet" href="./styles/halloween.css">
+    <!-- enlazo un JavaScript -->
+    <script src="./javascript/halloween.js"></script>
+    <!-- Mi favicon -->
+    <link rel="shortcut icon" type="image/x-ico" href="./images/favicon-halloween.ico">
+</head>
+<body>
+    <!-- ATENCIÓN: ESTE EJERCICIO NO ES RESPONSIVE. -->
+
+    <audio id="batSound">
+        <source src="./sounds/bats.mp3" type="audio/mpeg">      
+    </audio>
+
+    <audio id="backgroundSound">
+        <source src="./sounds/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="bruja">
+        <source src="./sounds/bruja.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="ghost">
+        <source src="./sounds/fantasma.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="container" onmouseover="sonar('backgroundSound')">
+            <h1 id="title">Welcome to our scary party</h1>
+            <!-- afecto aparición fantasma y sonido fantasmagórico. -->
+                            
+            <p id="witchp">Do not knock the house's door...</p>
+            <div id="witch" onclick="mostrar('horribleWitch'); sonar('bruja');"
+                            onmouseout="ocultar('horribleWitch'); silenciar('bruja');"></div>
+
+            <p id="batp">Do not look inside de left tree jijiji...</p>
+            <div id="left_tree" onmouseover="mostrar('bat'); sonar('batSound')"
+                                onmouseout="ocultar('bat')"></div>
+
+            <p id="phantomp">Beware, the ghost is on the loose</p>
+            <div id="phantom_div" onmouseover="mostrar('phantom'); sonar('ghost');"
+                                    onmouseout="ocultar('phantom')"></div>
+        </div>
+        <img id="phantom" src="./images/Ghost.gif">
+        <img id="horribleWitch" src="./images/Witch.gif">
+        <img id="bat" src="./images/bat.gif">
+    </div>
+</body>
+</html>
